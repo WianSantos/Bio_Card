@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+
+*{
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+.nome{
+    font-family: 'Satisfy', cursive;
+    color: #000000;
+}
+.referencia{
+    font-family: 'Questrial', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.acessos__pessoais{
+    font-family: 'Questrial', serif;
+    color: #fad560;
+    margin-top: 15%;
+}
+body{
+    text-align: center;
+
+    background-image: url(./Nova_pasta_/workspace-g9ebea2733_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 85vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    position: relative;
+}
+
+.perfil-foto{
+    border: 5px solid rgb(0, 0, 0);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    max-height: 160px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rede__social{
+    margin-top: 15%;
+    display: flex; 
+    position: relative;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    font-family: 'Questrial', sans-serif;
+    margin-top: 5%;
+    text-align: justify;
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #0c0c0c;
+    /*background-color: rgb(92, 92, 92);*/
+    color: rgb(255, 255, 255);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgb(110, 110, 110);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
